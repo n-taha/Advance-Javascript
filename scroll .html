@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #div1{
+            height: 300px;
+            width: 400px;
+            background-color: tomato;
+            overflow: auto;
+       }
+
+       #p{
+           height: 550px;
+           width: 650px;
+           color: white;
+      }
+    </style>
+</head>
+<body>
+    
+     <div id="div1">
+         <p id="p">Simple div To Practice The Javascript Scroll Event</p>
+     </div>
+
+     <div id="btns">
+
+        <button id="ltr">
+            Left To Right
+        </button>
+
+        <button id="rtl">
+           Right To Left
+        </button>
+
+     </div>
+
+
+    <script>
+    
+           let p = document.querySelector("#p")
+           let buttons = document.querySelector("#btns")
+
+           buttons.addEventListener("click" , (e)=>{
+            let div = document.querySelector("#div1");
+
+            let event = e.target
+
+            switch(event.id){
+                case "ltr":
+                    div1.scrollLeft += 20;
+                    break;
+
+                    case "rtl":
+                        div.scrollTop += 20;
+                        break;
+            }
+           })
+
+    </script>
+</body>
+</html>

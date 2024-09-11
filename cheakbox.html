@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <label for="cheak">
+    <input type="checkbox" id="cheak" value="yes" > Accept
+  </label>
+
+
+  <script>
+    let button = document.querySelector("#cheak")
+
+    
+    button.addEventListener("click" , ()=>{
+
+        button.checked = true;
+      if(button.checked){
+        alert("Already Clicked Button")
+      }
+    })
+  </script>
+</body>
+</html>

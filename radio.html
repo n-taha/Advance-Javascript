@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Select Your Favorite Programming Language</h1>
+
+    <div>
+        <input type="radio" name="lang" id="ts" value="TypeScript">
+        <label for="ts">TypeScript</label>
+    </div>
+   
+    <div>
+        <input type="radio" name="lang" id="js" value="JavaScript">
+        <label for="js">Javascript</label>
+    </div>
+
+    <div>
+        <input type="radio" name="lang" id="py" value="Python">
+        <label for="py">Python</label>
+    </div>
+
+     <div>
+        <button id="btn">Show Language</button>
+        <p id="text"></p>
+     </div>
+
+     <script>
+         let rButton = document.querySelectorAll("input[type='radio']");
+         let button = document.querySelector("#btn");
+         let text = document.querySelector("#text");
+         button.addEventListener("click" , ()=>{
+            let selectedLang;
+
+            for(const myBtn of rButton){
+                if(myBtn.checked){
+                    selectedLang = myBtn.value
+                    break;
+                }
+            }
+
+            text.innerHTML = selectedLang;
+         })
+        
+     </script>
+</body>
+</html>

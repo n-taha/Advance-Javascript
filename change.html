@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Event</title>
+</head>
+<body>
+
+    <label for="name">Write Your message</label>
+    <input type="text" id="input">
+    
+
+    <button id="button">Submit</button>
+
+    <p id="text"></p>
+
+    <script>
+      const input = document.querySelector("#input");
+      const button = document.querySelector("#button");
+      const text = document.querySelector("#text");
+
+       input.addEventListener("change" , ()=>{
+        text.textContent = input.value
+       });
+
+    </script>
+</body>
+</html>

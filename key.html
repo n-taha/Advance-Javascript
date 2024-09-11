@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+
+        <input type="text" id="text">
+        <p id="p"></p>
+ 
+
+   
+
+    <script>
+       
+       let text = document.querySelector("#text")
+       let p = document.querySelector("#p")
+       text.addEventListener("keydown" , (e)=>{
+           p.textContent = p.textContent + e.key
+       })
+
+    </script>
+</body>
+</html>

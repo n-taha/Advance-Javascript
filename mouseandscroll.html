@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+      <button id="btn">Color mood</button>
+      <button id="btn2">Inherit Mood</button>
+
+      <h1 id="text"> Click Me And Change My Color</h1>
+
+
+       <script>
+            //  let img = document.querySelector("#btn")
+
+            //  img.addEventListener("mousedown", ()=>{
+            //     // alert("You are mouse down this button")
+            //     console.log("You Are Mouse Down This Button")
+            //  })
+
+            //  img.addEventListener("mouseup" , ()=>{
+            //     // alert("You Are Already Click This button")
+            //     console.log("You Are Already Click THis Button")
+            //  })
+
+            //  img.addEventListener("click" , ()=>{
+            //     // alert("This Button Is Clicked");
+            //     console.log("This Is button is clicked")
+
+            //  })
+
+
+            //  img.addEventListener("dblclick" , ()=>{
+            //     // alert("You Are Double Clicked This Button")
+            //     console.log("you Are double clicked This button")
+            //  })
+
+            let btn = document.querySelector("#btn")
+            let btn2 = document.querySelector("#btn2")
+            let text = document.querySelector("#text")
+            let body = document.querySelector("body")
+
+            btn.addEventListener("click" , ()=>{
+              
+                body.style.backgroundColor = "tomato"
+            })
+
+            btn2.addEventListener("click" , ()=>{
+               
+                body.style.backgroundColor = "white"
+            })
+
+            text.addEventListener("dblclick" , ()=>{
+                let text2 = document.querySelector("h1")
+                text2.style.color = "green"
+            })
+       </script>
+</body>
+</html>

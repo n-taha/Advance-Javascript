@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            display: flex;
+            list-style: none;
+
+        }
+        #menu li{
+            padding:20px ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+    <ul id="menu">
+        <li><a  id="home">home</a></li>
+        <li><a  id="about">about</a></li>
+        <li><a  id="report">report</a></li>
+
+    </ul>
+
+    <script>
+        let menu = document.querySelector("#menu")
+
+        menu.addEventListener("click" , (event)=>{
+
+            let target = event.target;
+
+            switch(target.id){
+                case "home":
+                    console.log("You have clicked home button")
+                    break;
+                
+                case "about":
+                    console.log("You Have Clicked about button")
+                    break;
+
+                case "report": 
+                    console.log("You Have Clicked report Section")
+                    break;   
+            };
+
+        });
+    </script>
+</body>
+</html>
